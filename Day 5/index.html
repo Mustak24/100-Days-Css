@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CSS_5</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="frame flex">
+    <div class="center">
+
+      <div class="header flex" style="justify-content: space-between;">
+        <div class="flex column" style="align-items: flex-start; gap: 2px;">
+          <span style="font-size: 14px; font-weight: 700;">WEEKLY REPORT</span>
+          <span style="font-size: 11px; font-weight: 500;">01. Feb - 07. Feb</span>
+        </div>
+        <div class="flex column" style="align-items: flex-end; gap: 2px;">
+          <span style="font-size: 11px; font-weight: 500;">Revenue</span>
+          <span style="font-size: 14px; font-weight: 700;">$ 3621.79</span>
+        </div>
+      </div>
+
+      <div class="sellBuy flex" style="justify-content: flex-end;">
+        <span class="flex">
+          <div style="color: #fa7373;"></div>
+          View
+        </span>
+
+        <span class="flex">
+          <div style="color: #7ba2ff;"></div>
+          Purchases
+        </span>
+      </div>
+
+      <div class="graph flex">
+
+        <svg id="graph" width="250" height="100">
+          <circle r="3" cx="3" cy="56" fill="#fa7373" />
+          <line x1="3" y1="56" x2="43" y2="20" style="stroke: #fa7373; stroke-width: 2px;" />
+          <circle r="3" cx="43" cy="20" fill="#fa7373" />
+          <line x1="43" y1="20" x2="83" y2="35" style="stroke: #fa7373; stroke-width: 2px;" />
+          <circle r="3" cx="83" cy="35" fill="#fa7373" />
+          <line x1="83" y1="35" x2="123" y2="17" style="stroke: #fa7373; stroke-width: 2px;" />
+          <circle r="3" cx="123" cy="17" fill="#fa7373" />
+          <line x1="123" y1="17" x2="163" y2="49" style="stroke: #fa7373; stroke-width: 2px;" />
+          <circle r="3" cx="163" cy="49" fill="#fa7373" />
+          <line x1="163" y1="49" x2="203" y2="57" style="stroke: #fa7373; stroke-width: 2px;" />
+          <circle r="3" cx="203" cy="57" fill="#fa7373" />
+          <line x1="203" y1="57" x2="243" y2="35" style="stroke: #fa7373; stroke-width: 2px;" />
+          <circle r="3" cx="243" cy="35" fill="#fa7373" />
+
+          <circle r="3" cx="3" cy="77" fill="#7ba2ff" />
+          <line x1="3" y1="77" x2="43" y2="59" style="stroke: #7ba2ff; stroke-width: 2px;" />
+          <circle r="3" cx="43" cy="59" fill="#7ba2ff" />
+          <line x1="43" y1="59" x2="83" y2="77" style="stroke: #7ba2ff; stroke-width: 2px;" />
+          <circle r="3" cx="83" cy="77" fill="#7ba2ff" />
+          <line x1="83" y1="77" x2="123" y2="64" style="stroke: #7ba2ff; stroke-width: 2px;" />
+          <circle r="3" cx="123" cy="64" fill="#7ba2ff" />
+          <line x1="123" y1="64" x2="163" y2="75" style="stroke: #7ba2ff; stroke-width: 2px;" />
+          <circle r="3" cx="163" cy="75" fill="#7ba2ff" />
+          <line x1="163" y1="75" x2="203" y2="87" style="stroke: #7ba2ff; stroke-width: 2px;" />
+          <circle r="3" cx="203" cy="87" fill="#7ba2ff" />
+          <line x1="203" y1="87" x2="243" y2="80" style="stroke: #7ba2ff; stroke-width: 2px;" />
+          <circle r="3" cx="243" cy="80" fill="#7ba2ff" />
+
+        </svg>
+
+        <hr style="top: 10px; width: 100%;">
+        <hr style="top: 51px; width: 100%;">
+        <hr style="bottom: 0px; width: 100%;">
+
+        <span class="pointInfoRed flex" style="left: 3px; top: 26px;">458</span>
+        <span class="pointInfoRed flex" style="left: 43px; top: -10px;">812</span>
+        <span class="pointInfoRed flex" style="left: 83px; top: 5px;">746</span>
+        <span class="pointInfoRed flex" style="left: 123px; top: -13px;">877</span>
+        <span class="pointInfoRed flex" style="left: 163px; top: 21px;">517</span>
+        <span class="pointInfoRed flex" style="left: 203px; top: 27px;">434</span>
+        <span class="pointInfoRed flex" style="left: 243px; top: 5px;">458</span>
+
+        <span class="pointInfoBlue flex" style="left: 3px; top: 47px">26</span>
+        <span class="pointInfoBlue flex" style="left: 43px; top: 29px;">41</span>
+        <span class="pointInfoBlue flex" style="left: 83px; top: 47px;">22</span>
+        <span class="pointInfoBlue flex" style="left: 123px; top: 34px;">36</span>
+        <span class="pointInfoBlue flex" style="left: 163px; top: 45px;">25</span>
+        <span class="pointInfoBlue flex" style="left: 203px; top: 57px;">13</span>
+        <span class="pointInfoBlue flex" style="left: 243px; top: 50px;">20</span>
+
+      </div>
+
+      <div class="days flex" style="justify-content: space-around;">
+        <span>MON</span>
+        <span>TUE</span>
+        <span>WED</span>
+        <span>THU</span>
+        <span>FRI</span>
+        <span>SAT</span>
+        <span>SUN</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
