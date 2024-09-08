@@ -1,0 +1,136 @@
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .column {
+	flex-direction: column;
+  }
+  
+  .frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 5px;
+	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	color: #333;
+	background-image: linear-gradient(45deg, #edbc6b, #ca7d4e);
+	font-family: "Open Sans", Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .center {
+	position: sticky;
+	border-radius: 4px;
+	box-sizing: border-box;
+	background-color: white;
+	width: 320px;
+	height: 300px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  
+	* {
+	  box-sizing: border-box;
+	}
+  }
+  
+  .profile {
+	width: 200px;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 30px 20px;
+  }
+  
+  .profileImg {
+	width: 80px;
+	aspect-ratio: 1;
+	overflow: hidden;
+	position: sticky;
+	border-radius: 50%;
+	border-right-color: transparent;
+  
+	span:nth-child(1) {
+	  position: absolute;
+	  border-radius: 50%;
+	  transition: all 2s ease;
+	  border: 1px solid #7d6956;
+	  width: 100%;
+	  aspect-ratio: 1;
+	  border-right-color: transparent;
+	}
+  
+	span:nth-child(2) {
+	  position: absolute;
+	  border-radius: 50%;
+	  transition: all 2s ease;
+	  border: 1px solid #7d6956;
+	  border-left-color: transparent;
+	  width: calc(100% - 5px);
+	  aspect-ratio: 1;
+	}
+  
+	img {
+	  width: calc(100% - 10px);
+	  border-radius: 50%;
+	  position: absolute;
+	  box-sizing: border-box;
+	}
+  }
+  
+  .profileImg:hover {
+	span:nth-child(1) {
+	  rotate: 360deg;
+	}
+	span:nth-child(2) {
+	  rotate: -360deg;
+	}
+  }
+  
+  .profile button {
+	width: 120px;
+	height: 30px;
+	border-radius: 15px;
+	background-color: transparent;
+	color: #7d6956;
+	border: 1px solid;
+	font-size: 13px;
+	font-weight: 600;
+	transition: all 0.5s;
+  }
+  .profile button:hover {
+	background-color: #7d6956;
+	color: white;
+  }
+  
+  .info {
+	height: 100%;
+	width: 120px;
+	gap: 2px;
+	div {
+	  width: 120px;
+	  height: 98px;
+	  background-color: #f5e8df;
+	  transition: all 0.5s;
+	}
+	div:hover {
+	  background-color: #d8c4b6;
+	}
+  }
+  
+  .textSpan1 {
+	color: #7d6956;
+	font-weight: 600;
+	font-size: 18px;
+  }
+  
+  .textSpan2 {
+	color: #7d6956;
+	font-weight: 500;
+	font-size: 11px;
+  }
+  
