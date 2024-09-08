@@ -1,0 +1,230 @@
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .column {
+	flex-direction: column;
+  }
+  
+  .frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 5px;
+	background-color: #264057;
+	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	color: #333;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .center {
+	z-index: 1;
+	position: sticky;
+	border-radius: 4px;
+	box-sizing: border-box;
+	background-color: white;
+	width: 320px;
+	height: 300px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+	transition: all 0.8s ease;
+  }
+  
+  .center * {
+	box-sizing: border-box;
+  }
+  
+  nav {
+	z-index: 2;
+	width: 100%;
+	height: 60px;
+	background-color: #5f98cd;
+	padding: 10px 20px;
+  }
+  
+  nav input {
+	color: #808080;
+	padding: 5px 20px;
+	position: absolute;
+	border-radius: 40px;
+	opacity: 0;
+	scale: 0;
+	left: 15px;
+	border: none;
+	height: 35px;
+	width: 250px;
+	transform: translateX(40px);
+	transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  nav input:focus {
+	outline: none;
+  }
+  
+  main {
+	z-index: 2;
+	position: sticky;
+	background-color: white;
+	width: 100%;
+	height: 240px;
+	gap: 1px;
+  }
+  
+  aside {
+	z-index: 0;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	flex-direction: column;
+	padding: 15px 0px;
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	background-color: #43627d;
+	transition: all 0.8s ease;
+	transform: translateX(10px);
+	scale: 0.9;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  aside div {
+	width: 100%;
+	height: 60px;
+	color: rgba(255, 255, 255, 0.5);
+	padding: 10px 20px;
+	gap: 8px;
+  }
+  
+  aside div span:nth-child(1) {
+	--color: #a1b1be;
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+  }
+  
+  aside div:hover span {
+	--color: white;
+	color: white;
+  }
+  
+  aside div:hover {
+	background-color: #26405757;
+  }
+  
+  .searchIcon {
+	width: 20px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	border: 4px solid #afcce6;
+	transition: all 0.5s;
+  }
+  
+  .searchIcon div {
+	top: 14px;
+	left: 10px;
+	width: 10px;
+	rotate: 47deg;
+	position: relative;
+	border-radius: 10px;
+	transition: all 0.5s;
+	border: 3px solid #afcce6;
+  }
+  
+  .searchIcon:hover {
+	cursor: pointer;
+	border-color: white;
+  }
+  
+  .searchIcon:hover div {
+	border-color: white;
+  }
+  
+  .navIcon {
+	cursor: pointer;
+  }
+  
+  .navIcon div span {
+	color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .navIcon div:nth-child(2) {
+	color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .navIcon:hover div span {
+	color: white;
+  }
+  
+  .navIcon:hover div:nth-child(2) {
+	color: white;
+  }
+  
+  .messageInbox {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	gap: 3px;
+	width: 100%;
+	height: 80px;
+	padding: 20px 25px 0 25px;
+	background-color: transparent;
+	transition: all 1s ease;
+	transform: translateY(80px);
+	opacity: 0;
+  }
+  
+  .messageInbox .messageTime {
+	gap: 8px;
+  }
+  
+  .messageInbox .messageTime .messageBall {
+	width: 12px;
+	aspect-ratio: 1;
+	border: 2px solid royalblue;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px white;
+	background-color: white;
+  }
+  
+  .messageInbox .messageTime .time {
+	font-size: 12px;
+	font-weight: 500;
+  }
+  
+  .messageInbox .message {
+	padding: 0 0 0 20px;
+	width: 100%;
+	height: 100%;
+	color: #808080;
+	font-weight: 500;
+  }
+  
+  .messageInbox .message b {
+	color: #4b4b4b;
+	font-weight: 600;
+  }
+  
+  .messageInbox:hover {
+	cursor: pointer;
+  }
+  
+  .messageInbox:hover .time {
+	color: royalblue;
+  }
+  
+  .messageInbox:hover .message {
+	color: royalblue;
+  }
+  
+  .messageInbox:hover .message b {
+	color: royalblue;
+  }
