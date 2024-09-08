@@ -1,0 +1,102 @@
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	background: #e56262;
+	color: #333;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+	width: 150px;
+	height: 150px;
+	position: sticky;
+}
+
+.circule {
+	position: absolute;
+	aspect-ratio: 1;
+	width: 0;
+	background-color: white;
+	box-shadow: 10px 8px 15px rgba(0, 0, 0, 0.6);
+	border-radius: 50%;
+}
+.one {
+	animation: oneAnime 4s 1s infinite linear;
+}
+.sec {
+	animation: secAnime 4s 1s infinite linear;
+}
+.thr {
+	animation: thrAnime 4s 1s infinite linear;
+}
+
+@keyframes oneAnime {
+	0% {
+		width: 0px;
+	}
+	15% {
+		width: 120px;
+	}
+	80% {
+		width: 120px;
+	}
+	80% {
+		width: 120px;
+	}
+	90% {
+		width: 0px;
+	}
+	100% {
+		width: 0px;
+	}
+}
+@keyframes secAnime {
+	7% {
+		width: 0px;
+	}
+	20% {
+		width: 80px;
+	}
+	70% {
+		width: 80px;
+	}
+	82% {
+		width: 0px;
+	}
+	100% {
+		width: 0px;
+	}
+}
+@keyframes thrAnime {
+	14% {
+		width: 0px;
+	}
+	25% {
+		width: 40px;
+	}
+	60% {
+		width: 40px;
+	}
+	74% {
+		width: 0px;
+	}
+	100% {
+		width: 0px;
+	}
+}
