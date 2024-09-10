@@ -1,0 +1,88 @@
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.rain {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+  overflow: hidden;
+  z-index: 2;
+}
+.waterDrop{
+	position: absolute;
+	bottom: 100%; left: var(--x);
+	transition: all .5s;
+	width: 9px; aspect-ratio: 1;
+	scale: var(--s);
+	background-color: #7fc1f9;
+	border-radius: 50%;
+	border-top-right-radius: 0%;
+	transform: scaleY(1.3);
+	animation: rain 1s infinite var(--d) linear;
+}
+.moon{
+	position: absolute;
+	width: 70px; aspect-ratio: 1;
+	background-color: #f6edbd;
+	top: 40px; left: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 0 10px 1px #8f896d;
+
+	.hall{
+		width: 10px; aspect-ratio: 1;
+		border-radius: 50%;
+		background-color: #ece1a8;
+		scale: var(--s);
+		position: absolute;
+		left: var(--x); top: var(--y);
+	}
+}
+.cloud{
+	width: 300px; aspect-ratio: 1;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+	background-color: #303c5d;
+	top: var(--y); left: var(--x);
+	scale: var(--s);
+}
+
+@keyframes rain{
+	94%{
+		bottom: 0px;
+		transform: translateX(-50px);
+	}
+	100%{
+		bottom: -5px;
+		transform: translateX(-50px) scaleX(2);
+	}
+}
+
+.info {
+  width: 100%;
+  height: 20%;
+  box-sizing: border-box;
+  padding: 0 20px;
+  justify-content: space-between;
+}
