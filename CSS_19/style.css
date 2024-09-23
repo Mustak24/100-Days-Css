@@ -1,0 +1,84 @@
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 400px;
+    aspect-ratio: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    inset: 50% 0 0 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.radio {
+    width: 50px;
+    aspect-ratio: 1;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.ball {
+    width: 42px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    transition: all .5s;
+}
+
+.background {
+    height: 400px;
+    width: 1200px;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    display: flex;
+    transition: all .5s;
+}
+
+.bg {
+    width: 400px;
+    height: 400px;
+}
+
+.bg1 {
+    background-color: #9b59b6;
+}
+
+.bg2 {
+    background-color: #3498db;
+}
+
+.bg3 {
+    background-color: #1abc9c;
+}
+
+#radio1:checked~.ball {
+    transform: translateX(-65px);
+}
+
+#radio2:checked~.ball {
+    transform: translateX(0);
+}
+
+#radio3:checked~.ball {
+    transform: translateX(65px);
+}
+
+#radio1:checked~.background {
+    transform: translateX(0);
+}
+
+#radio2:checked~.background {
+    transform: translateX(-400px);
+}
+
+#radio3:checked~.background {
+    transform: translateX(-800px);
+}
